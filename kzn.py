@@ -34,12 +34,11 @@ while m > 0:
                     if s in ('r'):
                         rr = choice(r)
                         print(rr, ' - красный')
-                    else:
-                        if s in ('b'):
-                            bb = choice(b)
-                            print(bb, ' - черный')
-                        else:
-                            print(z, ' - зеро')
+                    elif s in ('b'):
+                        bb = choice(b)
+                        print(bb, ' - черный')
+                    elif s in ('z'):
+                        print(z, ' - зеро')
                     if rlt == s:
                         m += stavka
                     else:
